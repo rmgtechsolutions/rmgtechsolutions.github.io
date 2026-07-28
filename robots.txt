@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rmgtechsolutions.github.io/sitemap.xml
