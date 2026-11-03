@@ -1,91 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-IN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to check laptop battery health before buying used — RMG Tech Solutions</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to check laptop battery health before buying used | RMG Tech Solutions</title>
 <meta name="description" content="Use Windows' built-in powercfg battery report to see the true condition of a used laptop's battery before you pay. Step by step, no software needed.">
-<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://rmgtechsolutions.github.io/battery-health-check.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=4">
 </head>
 <body>
+<div class="progress" aria-hidden="true"></div>
 
-<header>
-  <div class="wrap">
-    <a class="logo" href="index.html"><img src="rmg-logo.jpg" alt="RMG Tech Solutions" class="logo-img"><span class="logo-text">RMG<span class="accent"> Tech Solutions</span></span></a>
-    <nav>
-      <a href="index.html">Guides</a>
-      <a href="about.html">About</a>
-      <a href="disclosure.html">Disclosure</a>
-    </nav>
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="images/rmg-logo.jpg" alt="RMG Tech Solutions logo"><span><b>RMG Tech Solutions</b><small>One stop · Every machine</small></span></a>
+    <nav class="links"><a href="index.html#services">Services</a><a href="index.html#work">Our work</a><a href="index.html#products">Products</a><a href="guides.html">Guides</a><a href="index.html#contact">Contact</a></nav>
+    <a class="btn btn-primary magnetic" href="index.html#contact">Book a site visit</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
+  <nav class="drawer" aria-label="Mobile">
+    <a href="index.html#services">Services</a><a href="index.html#work">Our work</a><a href="index.html#products">Products</a><a href="guides.html">Guides</a><a href="index.html#contact">Contact</a>
+    <a class="btn btn-primary" href="index.html#contact">Book a site visit</a>
+  </nav>
 </header>
 
-<article>
+<section class="page-hero">
   <div class="wrap">
-    <span class="kicker">GUIDE-005</span>
+    <p class="crumbs"><a href="index.html">Home</a> / <a href="guides.html">Guides</a> / Checks</p>
+    <span class="eyebrow">Checks</span>
     <h1>How to check laptop battery health before buying used</h1>
-    <p class="byline">From the RMG Tech Solutions workbench · Updated 2026</p>
+    <p class="meta"><span><i></i>RMG Tech Solutions</span><span><i></i>Updated 2026</span></p>
+  </div>
+</section>
 
-    <div class="disclosure-note">This site may earn a small commission if you buy through links here, at no extra cost to you. See the full <a href="disclosure.html">affiliate disclosure</a>.</div>
+<article class="prose">
 
-    <p>"Battery bilkul sahi hai, 5 ghante chalti hai." we hear this sentence every day, and about half the time the battery report says otherwise. The good news: Windows has a built-in tool that tells you the truth in about sixty seconds, no download needed, and any seller who won't let you run it has just answered your question.</p>
+  <p>"Battery bilkul sahi hai, 5 ghante chalti hai." I hear this sentence every day, and about half the time the battery report says otherwise. The good news: Windows has a built-in tool that tells you the truth in about sixty seconds, no download needed, and any seller who won't let you run it has just answered your question.</p>
 
-    <h2>Run the report</h2>
-    <p>On the laptop you're inspecting:</p>
-    <ol>
-      <li>Press the Windows key, type <code>cmd</code>, right-click Command Prompt, choose "Run as administrator"</li>
-      <li>Type exactly: <code>powercfg /batteryreport</code> and press Enter</li>
-      <li>It prints a file path, usually something like <code>C:\Users\Name\battery-report.html</code></li>
-      <li>Open that file in any browser</li>
-    </ol>
-    <p>The whole thing takes less than a minute and touches nothing on the machine. It only reads what Windows has already been recording.</p>
+  <h2>Run the report</h2>
+  <p>On the laptop you're inspecting:</p>
+  <ol>
+    <li>Press the Windows key, type <code>cmd</code>, right-click Command Prompt, choose "Run as administrator"</li>
+    <li>Type exactly: <code>powercfg /batteryreport</code> and press Enter</li>
+    <li>It prints a file path, usually something like <code>C:\Users\Name\battery-report.html</code></li>
+    <li>Open that file in any browser</li>
+  </ol>
+  <p>The whole thing takes less than a minute and touches nothing on the machine. It only reads what Windows has already been recording.</p>
 
-    <h2>The two numbers that matter</h2>
-    <p>Scroll to the section called "Installed batteries". You want these two rows:</p>
+  <h2>The two numbers that matter</h2>
+  <p>Scroll to the section called "Installed batteries". You want these two rows:</p>
 
-    <div class="spec-strip"><span class="label">Battery report — the key rows</span>DESIGN CAPACITY ......... what the battery held when new
+  <div class="spec-strip"><span class="label">Battery report — the key rows</span>DESIGN CAPACITY ......... what the battery held when new
 FULL CHARGE CAPACITY .... what it can hold today
 
 HEALTH % = Full Charge ÷ Design × 100</div>
 
-    <img src="battery-report.jpg" alt="A Windows battery report showing Design Capacity of 60,000 mWh and Full Charge Capacity of 56,110 mWh, with a cycle count of 91." style="width:100%; height:auto; margin:24px 0; border:1px solid var(--rule);">
+  <figure><img src="images/battery-report.jpg" alt="A Windows battery report showing Design Capacity of 60,000 mWh and Full Charge Capacity of 56,110 mWh, with a cycle count of 91." loading="lazy" decoding="async"><figcaption>A real report from a Lenovo we serviced. 56,110 ÷ 60,000 = 93.5% health, 91 cycles. This is what a well-kept battery looks like. Serial number and machine name blanked out.</figcaption></figure>
 
-    <p class="byline" style="margin-top:-12px; margin-bottom:28px;">A real report from a Lenovo on our bench. 56,110 ÷ 60,000 = 93.5% health, 91 cycles. This is what a well-kept battery looks like. Serial number and machine name blanked out.</p>
+  <p>Now compare that to a machine that came in last week: Design Capacity 45,000 mWh, Full Charge Capacity 27,900 mWh. That's 62% health. The seller had described it as "battery new jaisi". The laptop was otherwise good, so the customer bought it and budgeted for a replacement — which is the right way to use this number.</p>
 
-    <p>Now compare that to a machine that came in last week: Design Capacity 45,000 mWh, Full Charge Capacity 27,900 mWh. That's 62% health. The seller had described it as "battery new jaisi". The laptop was otherwise good, so the customer bought it and budgeted for a replacement — which is the right way to use this number.</p>
+  <p>Same report, same two rows, completely different machines. You can tell them apart in ten seconds once you know where to look.</p>
 
-    <p>Same report, same two rows, completely different machines. You can tell them apart in ten seconds once you know where to look.</p>
+  <h2>How to read the percentage</h2>
+  <ul>
+    <li><strong>90%+</strong> — barely used. Rare on a used machine, and slightly suspicious if the power-on hours are high (the battery may have been swapped, which isn't bad, just worth asking about).</li>
+    <li><strong>75–90%</strong> — normal for a 3-year-old business laptop. You'll get decent backup. No action needed.</li>
+    <li><strong>60–75%</strong> — noticeably shorter backup. Fine if you mostly work plugged in. Use it to negotiate.</li>
+    <li><strong>Below 60%</strong> — the battery is near the end. Assume replacement cost and subtract it from what you offer.</li>
+  </ul>
 
-    <h2>How to read the percentage</h2>
-    <ul>
-      <li><strong>90%+</strong> — barely used. Rare on a used machine, and slightly suspicious if the power-on hours are high (the battery may have been swapped, which isn't bad, just worth asking about).</li>
-      <li><strong>75–90%</strong> — normal for a 3-year-old business laptop. You'll get decent backup. No action needed.</li>
-      <li><strong>60–75%</strong> — noticeably shorter backup. Fine if you mostly work plugged in. Use it to negotiate.</li>
-      <li><strong>Below 60%</strong> — the battery is near the end. Assume replacement cost and subtract it from what you offer.</li>
-    </ul>
+  <h2>Also check: cycle count and recent usage</h2>
+  <p>Further down, the report shows "Cycle Count" (how many times the battery has been fully charged and drained). Under 500 is comfortable; over 1,000 means heavy use. Some manufacturers don't report this — a blank field isn't a red flag by itself.</p>
+  <p>The "Battery usage" and "Battery capacity history" sections show the last few days and the last few months. If capacity dropped sharply in recent months, the battery is degrading fast right now, not slowly. That's worse than a low-but-stable number.</p>
 
-    <h2>Also check: cycle count and recent usage</h2>
-    <p>Further down, the report shows "Cycle Count" (how many times the battery has been fully charged and drained). Under 500 is comfortable; over 1,000 means heavy use. Some manufacturers don't report this — a blank field isn't a red flag by itself.</p>
-    <p>The "Battery usage" and "Battery capacity history" sections show the last few days and the last few months. If capacity dropped sharply in recent months, the battery is degrading fast right now, not slowly. That's worse than a low-but-stable number.</p>
+  <h2>What a replacement actually costs</h2>
+  <p>For most business laptops in the Delhi market, a decent compatible battery runs ₹2,000–3,500, and a genuine OEM one ₹4,000–6,000. Installation is 10–15 minutes on models with an external battery, longer on newer sealed ones.</p>
+  <p>So a battery at 55% health is roughly a ₹2,500–3,000 problem. If the laptop is otherwise excellent and priced ₹4,000 below the market, that's still a good deal. If it's priced the same as a healthy unit, you're overpaying — and now you can say exactly why.</p>
 
-    <h2>What a replacement actually costs</h2>
-    <p>For most business laptops in the Delhi market, a decent compatible battery runs ₹2,000–3,500, and a genuine OEM one ₹4,000–6,000. Installation is 10–15 minutes on models with an external battery, longer on newer sealed ones.</p>
-    <p>So a battery at 55% health is roughly a ₹2,500–3,000 problem. If the laptop is otherwise excellent and priced ₹4,000 below the market, that's still a good deal. If it's priced the same as a healthy unit, you're overpaying — and now you can say exactly why.</p>
-
-    <h2>The one non-negotiable</h2>
-    <p>If a seller refuses to let you open Command Prompt on a laptop they're selling, walk away. It's a sixty-second read-only command. The refusal tells you what the report would have.</p>
-  </div>
+  <h2>The one non-negotiable</h2>
+  <p>If a seller refuses to let you open Command Prompt on a laptop they're selling, walk away. It's a sixty-second read-only command. The refusal tells you what the report would have.</p>
 </article>
+
+<div class="help-card reveal"><div>
+  <div><h3>Need a hand with your machine?</h3><p>Repairs, upgrades and honest buying advice. WhatsApp us and we'll reply the same day.</p></div>
+  <a class="btn btn-primary" href="https://wa.me/918929235937" target="_blank" rel="noopener">WhatsApp 89292 35937</a>
+</div></div>
+
+<section class="more">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow">Keep reading</span><h2>More guides</h2></div><a class="btn btn-ghost" href="guides.html">All guides</a></div>
+    <div class="guides"><a class="guide reveal" href="old-laptop-faster.html"><div class="gimg"><img src="images/ram-install.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Upgrades</small><h4>How to make an old laptop fast again: the SSD and RAM upgrade</h4></div></a><a class="guide reveal" href="thinkpad-buying-guide.html"><div class="gimg"><img src="images/bios-jumper.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Buying</small><h4>The used ThinkPad buying guide for students</h4></div></a><a class="guide reveal" href="used-server-hardware.html"><div class="gimg"><img src="images/server-board.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Business</small><h4>Used server hardware: what it is, and why it's not a study machine</h4></div></a></div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
-    <p>© 2026 RMG Tech Solutions · Delhi, India</p>
-    <p>
-      <a href="about.html">About</a>
-      <a href="disclosure.html">Affiliate Disclosure</a>
-    </p>
+    <div class="f-grid">
+      <div>
+        <div class="f-brand"><img loading="lazy" decoding="async" src="images/rmg-logo.jpg" alt=""><b>RMG Tech Solutions</b></div>
+        <p style="margin-top:18px;max-width:320px;font-size:14.5px">One stop solution for every machine: CCTV, networking, hardware, AMC, sales and purchase, and accessories across Delhi NCR, Bhiwadi and PAN India.</p>
+      </div>
+      <div><h5>Services</h5><ul><li><a href="cctv-installation-delhi.html">CCTV</a></li><li><a href="networking-services-delhi.html">Networking</a></li><li><a href="computer-hardware-repair-delhi.html">Hardware</a></li><li><a href="computer-amc-delhi.html">AMC</a></li><li><a href="laptop-sales-purchase-delhi.html">Sales and purchase</a></li><li><a href="computer-accessories-delhi.html">Accessories</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="index.html#work">Case studies</a></li><li><a href="about.html">About</a></li><li><a href="guides.html">Guides</a></li></ul></div>
+      <div><h5>Contact</h5><ul><li>+91 89292 35937</li><li>rmgtechsolutions1@gmail.com</li><li>Saraswati Vihar, New Delhi 110034</li><li>MSME Udyam registered · GST registered</li></ul></div>
+    </div>
+    <div class="f-bottom"><span>© 2026 RMG Tech Solutions</span><span>Delhi · PAN India</span></div>
   </div>
 </footer>
 
+<script src="js/main.js?v=4" defer></script>
 </body>
 </html>

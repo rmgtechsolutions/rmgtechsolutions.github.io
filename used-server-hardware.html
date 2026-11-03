@@ -1,104 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-IN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Used server hardware: what it is, and why it's not a study machine — RMG Tech Solutions</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Used server hardware: what it is, and why it's not a study machine | RMG Tech Solutions</title>
 <meta name="description" content="Cheap used servers look like incredible value on paper. Here's what's actually inside one, why the specs mislead, and who should genuinely buy one.">
-<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://rmgtechsolutions.github.io/used-server-hardware.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=4">
 </head>
 <body>
+<div class="progress" aria-hidden="true"></div>
 
-<header>
-  <div class="wrap">
-    <a class="logo" href="index.html"><img src="rmg-logo.jpg" alt="RMG Tech Solutions" class="logo-img"><span class="logo-text">RMG<span class="accent"> Tech Solutions</span></span></a>
-    <nav>
-      <a href="index.html">Guides</a>
-      <a href="about.html">About</a>
-      <a href="disclosure.html">Disclosure</a>
-    </nav>
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="images/rmg-logo.jpg" alt="RMG Tech Solutions logo"><span><b>RMG Tech Solutions</b><small>One stop · Every machine</small></span></a>
+    <nav class="links"><a href="index.html#services">Services</a><a href="index.html#work">Our work</a><a href="index.html#products">Products</a><a href="guides.html">Guides</a><a href="index.html#contact">Contact</a></nav>
+    <a class="btn btn-primary magnetic" href="index.html#contact">Book a site visit</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
+  <nav class="drawer" aria-label="Mobile">
+    <a href="index.html#services">Services</a><a href="index.html#work">Our work</a><a href="index.html#products">Products</a><a href="guides.html">Guides</a><a href="index.html#contact">Contact</a>
+    <a class="btn btn-primary" href="index.html#contact">Book a site visit</a>
+  </nav>
 </header>
 
-<article>
+<section class="page-hero">
   <div class="wrap">
-    <span class="kicker">GUIDE-008</span>
+    <p class="crumbs"><a href="index.html">Home</a> / <a href="guides.html">Guides</a> / Business</p>
+    <span class="eyebrow">Business</span>
     <h1>Used server hardware: what it is, and why it's not a study machine</h1>
-    <p class="byline">From the RMG Tech Solutions workbench · Updated 2026</p>
+    <p class="meta"><span><i></i>RMG Tech Solutions</span><span><i></i>Updated 2026</span></p>
+  </div>
+</section>
 
-    <div class="disclosure-note">This site may earn a small commission if you buy through links here, at no extra cost to you. See the full <a href="disclosure.html">affiliate disclosure</a>.</div>
+<article class="prose">
 
-    <p>Every few months a student asks me about a listing they've found: "Sir, 16 core Xeon, 32GB RAM, ₹12,000 only. Ye kaisa hai?" On paper it destroys any laptop on this site. In practice it's the wrong machine for almost everyone reading this — and understanding why teaches you more about computers than any spec sheet.</p>
+  <p>Every few months a student asks me about a listing they've found: "Sir, 16 core Xeon, 32GB RAM, ₹12,000 only. Ye kaisa hai?" On paper it destroys any laptop on this site. In practice it's the wrong machine for almost everyone reading this — and understanding why teaches you more about computers than any spec sheet.</p>
 
-    <p>So let's open one up.</p>
+  <p>So let's open one up.</p>
 
-    <img src="server-board.jpg" alt="Inside a Lenovo System x tower server on the workbench: dual CPU sockets with one populated, eight DIMM slots, hot-swap drive backplane cables, and the power supply on the left." style="width:100%; height:auto; margin:24px 0; border:1px solid var(--rule);">
+  <figure><img src="images/server-board.jpg" alt="Inside a Lenovo System x tower server during servicing: dual CPU sockets with one populated, eight DIMM slots, hot-swap drive backplane cables, and the power supply on the left." loading="lazy" decoding="async"><figcaption>A Lenovo System x tower in for service. Board dated March 2015. One CPU socket filled, one empty. The green LED means it's on standby power.</figcaption></figure>
 
-    <p class="byline" style="margin-top:-12px; margin-bottom:32px;">A Lenovo System x tower on our bench. Board dated March 2015. One CPU socket filled, one empty. The green LED means it's on standby power.</p>
+  <h2>What you're looking at</h2>
 
-    <h2>What you're looking at</h2>
+  <p>Start with the obvious difference: <strong>two processor sockets</strong>. The finned metal block in the middle is a heatsink covering one Xeon. To its right, that bare square grid of pins is a second, empty socket. A server can run two physical processors at once. No desktop or laptop does this.</p>
 
-    <p>Start with the obvious difference: <strong>two processor sockets</strong>. The finned metal block in the middle is a heatsink covering one Xeon. To its right, that bare square grid of pins is a second, empty socket. A server can run two physical processors at once. No desktop or laptop does this.</p>
+  <p>Next, <strong>eight memory slots</strong> in two banks. A normal desktop has two or four. Servers are built to hold enormous amounts of RAM — and specifically <em>ECC RAM</em>, which detects and corrects memory errors as they happen. Regular desktop RAM won't work in most of these boards, and server RAM won't work in your desktop. They are not interchangeable, no matter what the seller says.</p>
 
-    <p>Next, <strong>eight memory slots</strong> in two banks. A normal desktop has two or four. Servers are built to hold enormous amounts of RAM — and specifically <em>ECC RAM</em>, which detects and corrects memory errors as they happen. Regular desktop RAM won't work in most of these boards, and server RAM won't work in your desktop. They are not interchangeable, no matter what the seller says.</p>
+  <p>Up top, those grey cables run to a <strong>hot-swap drive backplane</strong> — a board with connectors where drives slide in from the front of the case without opening it or powering down. That's a design goal you only care about if the machine must never stop running.</p>
 
-    <p>Up top, those grey cables run to a <strong>hot-swap drive backplane</strong> — a board with connectors where drives slide in from the front of the case without opening it or powering down. That's a design goal you only care about if the machine must never stop running.</p>
+  <p>And that fan at the bottom, plus the ones you can't see: servers move a lot of air, loudly, because they're designed for a rack in a cold room where nobody sits.</p>
 
-    <p>And that fan at the bottom, plus the ones you can't see: servers move a lot of air, loudly, because they're designed for a rack in a cold room where nobody sits.</p>
+  <h2>Why the specs mislead</h2>
 
-    <h2>Why the specs mislead</h2>
-
-    <div class="spec-strip"><span class="label">What "16 cores, 32GB" hides</span>SINGLE-CORE SPEED .... often SLOWER than a modern i3
+  <div class="spec-strip"><span class="label">What "16 cores, 32GB" hides</span>SINGLE-CORE SPEED .... often SLOWER than a modern i3
 POWER DRAW ........... 150–400W idle-to-load, all day
 NOISE ................ 40–60 dB; a jet on a desk
 GRAPHICS ............. basic 2D chip; no gaming, no video
 RAM TYPE ............. ECC registered; not interchangeable
 WINDOWS .............. works, but drivers can fight you</div>
 
-    <p>Here is the core misunderstanding. A Xeon from 2015 has many cores, but each individual core is <strong>slower</strong> than a core in a current i3. Almost everything a student does — loading a mock test, opening a PDF, rendering a webpage — happens on <em>one</em> core at a time. Sixteen slow cores lose to four fast ones for that work. The extra cores sit idle.</p>
+  <p>Here is the core misunderstanding. A Xeon from 2015 has many cores, but each individual core is <strong>slower</strong> than a core in a current i3. Almost everything a student does — loading a mock test, opening a PDF, rendering a webpage — happens on <em>one</em> core at a time. Sixteen slow cores lose to four fast ones for that work. The extra cores sit idle.</p>
 
-    <p>Servers win at problems you can split into many independent pieces running at once: hosting websites, running virtual machines, database queries, batch processing. That's not exam prep.</p>
+  <p>Servers win at problems you can split into many independent pieces running at once: hosting websites, running virtual machines, database queries, batch processing. That's not exam prep.</p>
 
-    <p>Then there's electricity. A machine like this pulls a few hundred watts continuously. Run it eight hours a day and, at Delhi tariffs, you're adding meaningfully to the monthly bill — enough over a year to have bought a better laptop.</p>
+  <p>Then there's electricity. A machine like this pulls a few hundred watts continuously. Run it eight hours a day and, at Delhi tariffs, you're adding meaningfully to the monthly bill — enough over a year to have bought a better laptop.</p>
 
-    <h2>Who should actually buy one</h2>
+  <h2>Who should actually buy one</h2>
 
-    <p>we're not saying never. These are extraordinary value for the right person:</p>
-    <ul>
-      <li><strong>Learning Linux, virtualization, or networking seriously.</strong> A cheap server lets you run ten virtual machines and break them without consequence. This is a real, common reason.</li>
-      <li><strong>Home lab / self-hosted storage.</strong> Those hot-swap bays and ECC memory exist precisely to keep data safe over years.</li>
-      <li><strong>Someone with a garage, a store room, or anywhere that isn't a bedroom.</strong> The noise is not a joke.</li>
-    </ul>
+  <p>I'm not saying never. These are extraordinary value for the right person:</p>
+  <ul>
+    <li><strong>Learning Linux, virtualization, or networking seriously.</strong> A cheap server lets you run ten virtual machines and break them without consequence. This is a real, common reason.</li>
+    <li><strong>Home lab / self-hosted storage.</strong> Those hot-swap bays and ECC memory exist precisely to keep data safe over years.</li>
+    <li><strong>Someone with a garage, a store room, or anywhere that isn't a bedroom.</strong> The noise is not a joke.</li>
+  </ul>
 
-    <p>Note that none of these are "I just need a computer to study on." If that's you, an i3 laptop with an SSD will serve you better in every way that you will actually feel. See the <a href="best-laptops-under-30000.html">under ₹30,000 guide</a>.</p>
+  <p>Note that none of these are "I need a computer to study on." If that's you, an i3 laptop with an SSD will serve you better in every way that you will actually feel. See the <a href="best-laptops-under-30000.html">under ₹30,000 guide</a>.</p>
 
-    <h2>If you're buying one anyway, check these</h2>
-    <ol>
-      <li><strong>Are both CPUs present, or one?</strong> A second socket sitting empty is normal and fine — but the price should reflect one processor, not two. Sellers quote "dual Xeon capable" and mean the board, not the contents.</li>
-      <li><strong>Is the RAM ECC registered (RDIMM) or unbuffered?</strong> Boards are picky. Mismatched or partially populated banks cause boot failures that look like a dead machine.</li>
-      <li><strong>Does the RAID controller have a battery or flash module?</strong> A dead cache battery means the controller runs in a slower, safer mode. Cheap to replace, worth knowing.</li>
-      <li><strong>Power supplies:</strong> many have two for redundancy. Confirm both work; a single failed PSU is often why the machine got sold.</li>
-      <li><strong>Ask about the drive caddies.</strong> The trays that hold the drives are model-specific and are almost always missing. Buying them separately can cost more than the drives.</li>
-      <li><strong>Listen to it run</strong> before money changes hands. Then imagine that sound at 11 PM.</li>
-    </ol>
+  <h2>If you're buying one anyway, check these</h2>
+  <ol>
+    <li><strong>Are both CPUs present, or one?</strong> A second socket sitting empty is normal and fine — but the price should reflect one processor, not two. Sellers quote "dual Xeon capable" and mean the board, not the contents.</li>
+    <li><strong>Is the RAM ECC registered (RDIMM) or unbuffered?</strong> Boards are picky. Mismatched or partially populated banks cause boot failures that look like a dead machine.</li>
+    <li><strong>Does the RAID controller have a battery or flash module?</strong> A dead cache battery means the controller runs in a slower, safer mode. Cheap to replace, worth knowing.</li>
+    <li><strong>Power supplies:</strong> many have two for redundancy. Confirm both work; a single failed PSU is often why the machine got sold.</li>
+    <li><strong>Ask about the drive caddies.</strong> The trays that hold the drives are model-specific and are almost always missing. Buying them separately can cost more than the drives.</li>
+    <li><strong>Listen to it run</strong> before money changes hands. Then imagine that sound at 11 PM.</li>
+  </ol>
 
-    <h2>The real lesson</h2>
+  <h2>The real lesson</h2>
 
-    <p>Specs are answers to questions. "How many cores?" is only useful once you know whether your work uses more than one at a time. "How much RAM?" matters until you have enough, then stops mattering. Server hardware looks like a bargain because it's optimised for a question you're not asking.</p>
+  <p>Specs are answers to questions. "How many cores?" is only useful once you know whether your work uses more than one at a time. "How much RAM?" matters until you have enough, then stops mattering. Server hardware looks like a bargain because it's optimised for a question you're not asking.</p>
 
-    <p>The same logic runs through every guide on this site. A gaming laptop's graphics card, a workstation's Xeon, a 16GB RAM upgrade — all of them are real capability that some people genuinely need. The skill worth building isn't knowing which spec is biggest. It's knowing which specs you can safely ignore.</p>
-  </div>
+  <p>The same logic runs through every guide on this site. A gaming laptop's graphics card, a workstation's Xeon, a 16GB RAM upgrade — all of them are real capability that some people genuinely need. The skill worth building isn't knowing which spec is biggest. It's knowing which specs you can safely ignore.</p>
 </article>
+
+<div class="help-card reveal"><div>
+  <div><h3>Need a hand with your machine?</h3><p>Repairs, upgrades and honest buying advice. WhatsApp us and we'll reply the same day.</p></div>
+  <a class="btn btn-primary" href="https://wa.me/918929235937" target="_blank" rel="noopener">WhatsApp 89292 35937</a>
+</div></div>
+
+<section class="more">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow">Keep reading</span><h2>More guides</h2></div><a class="btn btn-ghost" href="guides.html">All guides</a></div>
+    <div class="guides"><a class="guide reveal" href="best-laptops-under-30000.html"><div class="gimg"><img src="images/new-lenovo.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Buying</small><h4>Best laptops under ₹30,000 for SSC, banking and government exam prep (2026)</h4></div></a><a class="guide reveal" href="new-vs-used-laptop.html"><div class="gimg"><img src="images/bench-desktop.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Buying</small><h4>New vs used laptop: an honest comparison from someone who sells both</h4></div></a><a class="guide reveal" href="how-much-ram-processor.html"><div class="gimg"><img src="images/cpu-taskmgr.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Specs explained</small><h4>How much RAM and which processor do you actually need for study?</h4></div></a></div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
-    <p>© 2026 RMG Tech Solutions · Delhi, India</p>
-    <p>
-      <a href="about.html">About</a>
-      <a href="disclosure.html">Affiliate Disclosure</a>
-    </p>
+    <div class="f-grid">
+      <div>
+        <div class="f-brand"><img loading="lazy" decoding="async" src="images/rmg-logo.jpg" alt=""><b>RMG Tech Solutions</b></div>
+        <p style="margin-top:18px;max-width:320px;font-size:14.5px">One stop solution for every machine: CCTV, networking, hardware, AMC, sales and purchase, and accessories across Delhi NCR, Bhiwadi and PAN India.</p>
+      </div>
+      <div><h5>Services</h5><ul><li><a href="cctv-installation-delhi.html">CCTV</a></li><li><a href="networking-services-delhi.html">Networking</a></li><li><a href="computer-hardware-repair-delhi.html">Hardware</a></li><li><a href="computer-amc-delhi.html">AMC</a></li><li><a href="laptop-sales-purchase-delhi.html">Sales and purchase</a></li><li><a href="computer-accessories-delhi.html">Accessories</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="index.html#work">Case studies</a></li><li><a href="about.html">About</a></li><li><a href="guides.html">Guides</a></li></ul></div>
+      <div><h5>Contact</h5><ul><li>+91 89292 35937</li><li>rmgtechsolutions1@gmail.com</li><li>Saraswati Vihar, New Delhi 110034</li><li>MSME Udyam registered · GST registered</li></ul></div>
+    </div>
+    <div class="f-bottom"><span>© 2026 RMG Tech Solutions</span><span>Delhi · PAN India</span></div>
   </div>
 </footer>
 
+<script src="js/main.js?v=4" defer></script>
 </body>
 </html>

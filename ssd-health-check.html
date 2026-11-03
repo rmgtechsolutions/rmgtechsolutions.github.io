@@ -1,79 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-IN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to check SSD health before buying a used laptop — RMG Tech Solutions</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to check SSD health before buying a used laptop | RMG Tech Solutions</title>
 <meta name="description" content="The 5-minute SSD health test to run on any used laptop before paying — free tools, what the numbers mean, and when to walk away.">
-<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://rmgtechsolutions.github.io/ssd-health-check.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=4">
 </head>
 <body>
+<div class="progress" aria-hidden="true"></div>
 
-<header>
-  <div class="wrap">
-    <a class="logo" href="index.html"><img src="rmg-logo.jpg" alt="RMG Tech Solutions" class="logo-img"><span class="logo-text">RMG<span class="accent"> Tech Solutions</span></span></a>
-    <nav>
-      <a href="index.html">Guides</a>
-      <a href="about.html">About</a>
-      <a href="disclosure.html">Disclosure</a>
-    </nav>
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="images/rmg-logo.jpg" alt="RMG Tech Solutions logo"><span><b>RMG Tech Solutions</b><small>One stop · Every machine</small></span></a>
+    <nav class="links"><a href="index.html#services">Services</a><a href="index.html#work">Our work</a><a href="index.html#products">Products</a><a href="guides.html">Guides</a><a href="index.html#contact">Contact</a></nav>
+    <a class="btn btn-primary magnetic" href="index.html#contact">Book a site visit</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
+  <nav class="drawer" aria-label="Mobile">
+    <a href="index.html#services">Services</a><a href="index.html#work">Our work</a><a href="index.html#products">Products</a><a href="guides.html">Guides</a><a href="index.html#contact">Contact</a>
+    <a class="btn btn-primary" href="index.html#contact">Book a site visit</a>
+  </nav>
 </header>
 
-<article>
+<section class="page-hero">
   <div class="wrap">
-    <span class="kicker">GUIDE-004</span>
+    <p class="crumbs"><a href="index.html">Home</a> / <a href="guides.html">Guides</a> / Checks</p>
+    <span class="eyebrow">Checks</span>
     <h1>How to check SSD health before buying any used laptop</h1>
-    <p class="byline">From the RMG Tech Solutions workbench · Updated 2026</p>
-
-    <div class="disclosure-note">This site may earn a small commission if you buy through links here, at no extra cost to you. See the full <a href="disclosure.html">affiliate disclosure</a>.</div>
-
-    <p>Of all the parts in a used laptop, the SSD is the one that hides its condition best. A dying battery announces itself. A worn keyboard is visible. But an SSD at 30% health boots Windows just fine today — and takes all your notes with it when it dies three months later. This is the check we run on every single machine that enters our shop, and it takes five minutes.</p>
-
-    <h2>Step 1: Install CrystalDiskInfo</h2>
-    <p>CrystalDiskInfo is free, tiny, and the industry-standard tool for this. Download it from the official site (crystalmark.info), install, and open it. If you're testing at a shop, carry it on a pen drive — the portable version needs no installation. An honest seller will have no problem with you running it.</p>
-
-    <h2>Step 2: Read the three numbers that matter</h2>
-
-    <div class="spec-strip"><span class="label">CrystalDiskInfo — what to read</span>HEALTH STATUS ....... Good (blue) = fine
-                     Caution (yellow) = negotiate hard or skip
-                     Bad (red) = walk away, no discussion
-HEALTH PERCENT ...... 90%+ excellent · 80–90% acceptable
-                     below 70% = will need replacement
-POWER-ON HOURS ...... under 10,000 hrs = light office use
-                     20,000+ hrs = machine ran day & night</div>
-
-    <p><strong>Health Status</strong> is the summary verdict. "Good" in blue means the drive's internal monitoring (called SMART data) shows no serious wear. "Caution" usually means some memory cells have failed or spare blocks are being used up. It might run another year, or another week — nobody can promise which.</p>
-
-    <p><strong>The percentage</strong> is the remaining rated life. SSDs wear out by writing — every memory cell can only be written a limited number of times. A drive at 95% barely lived; a drive at 65% spent years in heavy use, and you should assume replacement cost (₹1,500–2,500 for 256GB) in your negotiation.</p>
-
-    <p><strong>Power-on hours</strong> tells you the machine's life story. we've seen "barely used, madam ka laptop" machines showing 26,000 hours — that's three years of running 24 hours a day. The seller's story and the SMART data don't always match. Trust the data.</p>
-
-    <h2>Step 3: A quick speed sanity check</h2>
-    <p>Health can be fine while speed is not — some sellers put the cheapest possible SSD into an old machine before selling. Run CrystalDiskMark (same developer, also free) once:</p>
-    <ul>
-      <li><strong>SATA SSD:</strong> expect roughly 400–550 MB/s read. Fine for study use.</li>
-      <li><strong>NVMe SSD:</strong> expect 1,500 MB/s or higher. If an "NVMe" drive shows 400 MB/s, something is wrong.</li>
-      <li><strong>Under 200 MB/s read:</strong> either a dying drive or an HDD pretending. Investigate before paying.</li>
-    </ul>
-
-    <h2>When to walk away vs when to negotiate</h2>
-    <p>A weak SSD is not automatically a deal-breaker — it's a <strong>negotiation card</strong>. Drives are cheap and easy to replace. If everything else about the laptop is excellent and the SSD shows 70% health, ask for ₹1,500–2,000 off and swap the drive yourself (or have any shop do it for ₹200 labour).</p>
-    <p>Walk away without negotiating when: health status is "Bad", the seller refuses to let you run the tool, or the SMART data contradicts the seller's story so badly that you can't trust anything else they've said. In a market with hundred other sellers, trust is the spec that matters most.</p>
-
-    <p>Five minutes with a free tool protects months of your study notes. No used laptop purchase should skip it.</p>
+    <p class="meta"><span><i></i>RMG Tech Solutions</span><span><i></i>Updated 2026</span></p>
   </div>
+</section>
+
+<article class="prose">
+
+  <p>Of all the parts in a used laptop, the SSD is the one that hides its condition best. A dying battery announces itself. A worn keyboard is visible. But an SSD at 30% health boots Windows just fine today — and takes all your notes with it when it dies three months later. This is the check I run on every single machine that comes to us, and it takes five minutes.</p>
+
+  <h2>Step 1: Install CrystalDiskInfo</h2>
+  <p>CrystalDiskInfo is free, tiny, and the industry-standard tool for this. Download it from the official site (crystalmark.info), install, and open it. If you're testing at a shop, carry it on a pen drive — the portable version needs no installation. An honest seller will have no problem with you running it.</p>
+
+  <h2>Step 2: Read the three numbers that matter</h2>
+
+  <div class="spec-strip"><span class="label">CrystalDiskInfo — what to read</span>HEALTH STATUS ....... Good (blue) = fine
+                   Caution (yellow) = negotiate hard or skip
+                   Bad (red) = walk away, no discussion
+HEALTH PERCENT ...... 90%+ excellent · 80–90% acceptable
+                   below 70% = will need replacement
+POWER-ON HOURS ...... under 10,000 hrs = light office use
+                   20,000+ hrs = machine ran day & night</div>
+
+  <p><strong>Health Status</strong> is the summary verdict. "Good" in blue means the drive's internal monitoring (called SMART data) shows no serious wear. "Caution" usually means some memory cells have failed or spare blocks are being used up. It might run another year, or another week — nobody can promise which.</p>
+
+  <p><strong>The percentage</strong> is the remaining rated life. SSDs wear out by writing — every memory cell can only be written a limited number of times. A drive at 95% barely lived; a drive at 65% spent years in heavy use, and you should assume replacement cost (₹1,500–2,500 for 256GB) in your negotiation.</p>
+
+  <p><strong>Power-on hours</strong> tells you the machine's life story. I've seen "barely used, madam ka laptop" machines showing 26,000 hours — that's three years of running 24 hours a day. The seller's story and the SMART data don't always match. Trust the data.</p>
+
+  <h2>Step 3: A quick speed sanity check</h2>
+  <p>Health can be fine while speed is not — some sellers put the cheapest possible SSD into an old machine before selling. Run CrystalDiskMark (same developer, also free) once:</p>
+  <ul>
+    <li><strong>SATA SSD:</strong> expect roughly 400–550 MB/s read. Fine for study use.</li>
+    <li><strong>NVMe SSD:</strong> expect 1,500 MB/s or higher. If an "NVMe" drive shows 400 MB/s, something is wrong.</li>
+    <li><strong>Under 200 MB/s read:</strong> either a dying drive or an HDD pretending. Investigate before paying.</li>
+  </ul>
+
+  <h2>When to walk away vs when to negotiate</h2>
+  <p>A weak SSD is not automatically a deal-breaker — it's a <strong>negotiation card</strong>. Drives are cheap and easy to replace. If everything else about the laptop is excellent and the SSD shows 70% health, ask for ₹1,500–2,000 off and swap the drive yourself (or have any shop do it for ₹200 labour).</p>
+  <p>Walk away without negotiating when: health status is "Bad", the seller refuses to let you run the tool, or the SMART data contradicts the seller's story so badly that you can't trust anything else they've said. In a market with hundred other sellers, trust is the spec that matters most.</p>
+
+  <p>Five minutes with a free tool protects months of your study notes. No used laptop purchase should skip it.</p>
 </article>
+
+<div class="help-card reveal"><div>
+  <div><h3>Need a hand with your machine?</h3><p>Repairs, upgrades and honest buying advice. WhatsApp us and we'll reply the same day.</p></div>
+  <a class="btn btn-primary" href="https://wa.me/918929235937" target="_blank" rel="noopener">WhatsApp 89292 35937</a>
+</div></div>
+
+<section class="more">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow">Keep reading</span><h2>More guides</h2></div><a class="btn btn-ghost" href="guides.html">All guides</a></div>
+    <div class="guides"><a class="guide reveal" href="battery-health-check.html"><div class="gimg"><img src="images/battery-report.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Checks</small><h4>How to check laptop battery health before buying used</h4></div></a><a class="guide reveal" href="old-laptop-faster.html"><div class="gimg"><img src="images/ram-install.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Upgrades</small><h4>How to make an old laptop fast again: the SSD and RAM upgrade</h4></div></a><a class="guide reveal" href="thinkpad-buying-guide.html"><div class="gimg"><img src="images/bios-jumper.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Buying</small><h4>The used ThinkPad buying guide for students</h4></div></a></div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
-    <p>© 2026 RMG Tech Solutions · Delhi, India</p>
-    <p>
-      <a href="about.html">About</a>
-      <a href="disclosure.html">Affiliate Disclosure</a>
-    </p>
+    <div class="f-grid">
+      <div>
+        <div class="f-brand"><img loading="lazy" decoding="async" src="images/rmg-logo.jpg" alt=""><b>RMG Tech Solutions</b></div>
+        <p style="margin-top:18px;max-width:320px;font-size:14.5px">One stop solution for every machine: CCTV, networking, hardware, AMC, sales and purchase, and accessories across Delhi NCR, Bhiwadi and PAN India.</p>
+      </div>
+      <div><h5>Services</h5><ul><li><a href="cctv-installation-delhi.html">CCTV</a></li><li><a href="networking-services-delhi.html">Networking</a></li><li><a href="computer-hardware-repair-delhi.html">Hardware</a></li><li><a href="computer-amc-delhi.html">AMC</a></li><li><a href="laptop-sales-purchase-delhi.html">Sales and purchase</a></li><li><a href="computer-accessories-delhi.html">Accessories</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="index.html#work">Case studies</a></li><li><a href="about.html">About</a></li><li><a href="guides.html">Guides</a></li></ul></div>
+      <div><h5>Contact</h5><ul><li>+91 89292 35937</li><li>rmgtechsolutions1@gmail.com</li><li>Saraswati Vihar, New Delhi 110034</li><li>MSME Udyam registered · GST registered</li></ul></div>
+    </div>
+    <div class="f-bottom"><span>© 2026 RMG Tech Solutions</span><span>Delhi · PAN India</span></div>
   </div>
 </footer>
 
+<script src="js/main.js?v=4" defer></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+# RMG Tech Solutions
+
+> One stop solution for every machine. RMG Tech Solutions is an MSME Udyam registered and GST registered IT company in Saraswati Vihar, New Delhi. It provides CCTV installation, networking, computer hardware repair and upgrades, AMC (annual maintenance contracts), laptop and desktop sales and purchase, and computer accessories for factories, schools, companies and homes across Delhi NCR and Bhiwadi, with supply and projects PAN India.
+
+- Phone and WhatsApp: +91 89292 35937
+- Email: rmgtechsolutions1@gmail.com
+- Address: WZ-243/182, Street No. 3, Sri Nagar Colony, Saraswati Vihar, New Delhi 110034, India
+- Run by: Rajiv Gupta and Mohak Gupta
+- Coverage: on-site service across Delhi NCR and Bhiwadi; hardware supply and projects PAN India
+- Clients include SS Metal Industries (Amatra brand), Bawana Industrial Area: CCTV installation and complete IT management. Also supplies schools and companies.
+
+## Services
+- [CCTV camera installation](https://rmgtechsolutions.github.io/cctv-installation-delhi.html): CCTV installation in Delhi for factories, schools, offices and homes: site survey, HD and IP cameras, DVR/NVR, mobile viewing and AMC.
+- [Networking and Wi-Fi setup](https://rmgtechsolutions.github.io/networking-services-delhi.html): Office, school and factory networking in Delhi: LAN cabling, switches, routers, Wi-Fi on every floor and troubleshooting.
+- [Computer hardware repair and upgrades](https://rmgtechsolutions.github.io/computer-hardware-repair-delhi.html): Laptop, desktop and server repair in Saraswati Vihar, Delhi: motherboard, screen, battery, SSD and RAM upgrades, 15-day repair warranty.
+- [Computer and IT AMC](https://rmgtechsolutions.github.io/computer-amc-delhi.html): Computer AMC in Delhi for offices, schools and factories: scheduled visits, priority breakdown support, asset records, CCTV and network upkeep.
+- [Laptop and desktop sales and purchase](https://rmgtechsolutions.github.io/laptop-sales-purchase-delhi.html): New and quality-checked used laptops and desktops in Delhi, tested before delivery. Bulk supply for schools and offices with GST invoice. We buy old laptops.
+- [Computer accessories and parts](https://rmgtechsolutions.github.io/computer-accessories-delhi.html): SSDs, RAM, laptop batteries, chargers, keyboards, mice, cables and monitors in Delhi, checked for compatibility and fitted. Bulk supply with GST invoice.
+
+## Company
+- [About RMG Tech Solutions](https://rmgtechsolutions.github.io/about.html)
+- [Contact and quote](https://rmgtechsolutions.github.io/#contact)
+
+## Guides
+- [How to check laptop battery health before buying used](https://rmgtechsolutions.github.io/battery-health-check.html)
+- [Best laptops under ₹30,000 for SSC, banking and government exam prep (2026)](https://rmgtechsolutions.github.io/best-laptops-under-30000.html)
+- [How much RAM and which processor do you actually need for study?](https://rmgtechsolutions.github.io/how-much-ram-processor.html)
+- [New vs used laptop: an honest comparison from someone who sells both](https://rmgtechsolutions.github.io/new-vs-used-laptop.html)
+- [How to make an old laptop fast again: the SSD and RAM upgrade](https://rmgtechsolutions.github.io/old-laptop-faster.html)
+- [How to check SSD health before buying any used laptop](https://rmgtechsolutions.github.io/ssd-health-check.html)
+- [The used ThinkPad buying guide for students](https://rmgtechsolutions.github.io/thinkpad-buying-guide.html)
+- [Used server hardware: what it is, and why it's not a study machine](https://rmgtechsolutions.github.io/used-server-hardware.html)

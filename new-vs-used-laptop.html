@@ -1,80 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-IN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>New vs used laptop: honest comparison — RMG Tech Solutions</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New vs used laptop: honest comparison | RMG Tech Solutions</title>
 <meta name="description" content="When a used business laptop beats a new budget laptop, and the exact physical checks to run before buying — from someone who sells both daily.">
-<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://rmgtechsolutions.github.io/new-vs-used-laptop.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=4">
 </head>
 <body>
+<div class="progress" aria-hidden="true"></div>
 
-<header>
-  <div class="wrap">
-    <a class="logo" href="index.html"><img src="rmg-logo.jpg" alt="RMG Tech Solutions" class="logo-img"><span class="logo-text">RMG<span class="accent"> Tech Solutions</span></span></a>
-    <nav>
-      <a href="index.html">Guides</a>
-      <a href="about.html">About</a>
-      <a href="disclosure.html">Disclosure</a>
-    </nav>
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="images/rmg-logo.jpg" alt="RMG Tech Solutions logo"><span><b>RMG Tech Solutions</b><small>One stop · Every machine</small></span></a>
+    <nav class="links"><a href="index.html#services">Services</a><a href="index.html#work">Our work</a><a href="index.html#products">Products</a><a href="guides.html">Guides</a><a href="index.html#contact">Contact</a></nav>
+    <a class="btn btn-primary magnetic" href="index.html#contact">Book a site visit</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
+  <nav class="drawer" aria-label="Mobile">
+    <a href="index.html#services">Services</a><a href="index.html#work">Our work</a><a href="index.html#products">Products</a><a href="guides.html">Guides</a><a href="index.html#contact">Contact</a>
+    <a class="btn btn-primary" href="index.html#contact">Book a site visit</a>
+  </nav>
 </header>
 
-<article>
+<section class="page-hero">
   <div class="wrap">
-    <span class="kicker">GUIDE-002</span>
+    <p class="crumbs"><a href="index.html">Home</a> / <a href="guides.html">Guides</a> / Buying</p>
+    <span class="eyebrow">Buying</span>
     <h1>New vs used laptop: an honest comparison from someone who sells both</h1>
-    <p class="byline">From the RMG Tech Solutions workbench · Updated 2026</p>
-
-    <div class="disclosure-note">This site may earn a small commission if you buy through links here, at no extra cost to you. See the full <a href="disclosure.html">affiliate disclosure</a>.</div>
-
-    <p>We sell both new and used laptops, so we have no reason to push you toward either. What we do have is a strong opinion about <em>who</em> should buy which — because we see the after-sales side too. The students who come back angry, and the ones who come back to buy a second machine for their brother.</p>
-
-    <h2>The honest case for used</h2>
-    <p>A used business-class laptop — think Lenovo ThinkPad, Dell Latitude, HP EliteBook — was built for corporate use. Companies buy these in thousands, use them for 3–4 years, and then they enter the refurbished market. At ₹15,000–22,000 you can get a machine that originally cost ₹70,000+.</p>
-    <p>What you get for that money is <strong>build quality no new budget laptop can match</strong>: better keyboards, stronger hinges, easier repairs, and often better screens. A ThinkPad keyboard alone is worth the price for someone typing notes daily.</p>
-
-    <h2>The honest case against used</h2>
-    <p>The used market has no MRP and no referee. The same laptop sells at three different prices in three shops of the same market. The battery may be at 60% of its original capacity. The SSD may be near the end of its life. The processor is usually 6th–8th generation — fine for study, but you're starting further back on the ageing curve.</p>
-    <p>And the biggest issue: <strong>warranty</strong>. A shop warranty of 3–6 months is not the same as a 1-year onsite brand warranty. If you live in a small town far from a computer market, a new laptop's brand warranty is worth real money.</p>
-
-    <h2>My rule of thumb</h2>
-
-    <div class="spec-strip"><span class="label">Bench verdict</span>BUY NEW ..... if you can't personally inspect the machine,
-              live far from a repair market, or need
-              zero-tension ownership for 3+ years
-BUY USED .... if you can test it in person (or trust the
-              seller), want maximum build quality per rupee,
-              and are okay replacing a battery someday</div>
-
-    <h2>The exact checks we run on every used laptop</h2>
-    <p>If you do go used, run these checks at the shop before paying. Any honest seller will let you. If a seller refuses, that refusal is your answer.</p>
-    <ol>
-      <li><strong>SSD health.</strong> Install or ask for CrystalDiskInfo. Health should say "Good" and ideally above 85%. we've written a <a href="ssd-health-check.html">full guide on reading these numbers</a>.</li>
-      <li><strong>Battery report.</strong> On Windows, run <code>powercfg /batteryreport</code> in Command Prompt. Compare "Design Capacity" vs "Full Charge Capacity". Below 60% means budget ₹2,000–3,500 for a new battery soon.</li>
-      <li><strong>Keyboard test.</strong> Open Notepad and press every key. Business laptops from offices sometimes have worn or dead keys.</li>
-      <li><strong>Screen test.</strong> Open a full-white image and a full-black image. Look for dead pixels, lines, and pressure marks.</li>
-      <li><strong>Hinges and body.</strong> Open and close the lid slowly. Grinding, cracking, or a wobbling screen means the hinge mounts are damaged — expensive to fix properly.</li>
-      <li><strong>Ports.</strong> Carry a pen drive and test every USB port. Test the charger port with a slight wiggle — loose DC jacks are a common used-laptop disease.</li>
-      <li><strong>Processor generation.</strong> Right-click My Computer → Properties, or ask the seller to show. Don't accept anything older than 6th gen Intel in 2026, whatever the price.</li>
-    </ol>
-
-    <h2>What about "refurbished" on online platforms?</h2>
-    <p>Certified refurbished from a proper platform sits between new and shop-used: you get a return window and some warranty, but pay a bit more than street price. For students who can't inspect in person, it's a reasonable middle path — just read the condition grading carefully (Superb / Good / Fair mean very different physical conditions).</p>
-
-    <p>Whichever way you go, remember: a laptop for exam prep is a tool, not a status symbol. The best laptop is the one that opens your mock test instantly and doesn't distract you with problems.</p>
+    <p class="meta"><span><i></i>RMG Tech Solutions</span><span><i></i>Updated 2026</span></p>
   </div>
+</section>
+
+<article class="prose">
+
+  <p>I sell both new and used laptops for a living, so I have no reason to push you toward either. What I do have is a strong opinion about <em>who</em> should buy which — because I see the after-sales side too. The students who come back angry, and the ones who come back to buy a second machine for their brother.</p>
+
+  <h2>The honest case for used</h2>
+  <p>A used business-class laptop — think Lenovo ThinkPad, Dell Latitude, HP EliteBook — was built for corporate use. Companies buy these in thousands, use them for 3–4 years, and then they enter the refurbished market. At ₹15,000–22,000 you can get a machine that originally cost ₹70,000+.</p>
+  <p>What you get for that money is <strong>build quality no new budget laptop can match</strong>: better keyboards, stronger hinges, easier repairs, and often better screens. A ThinkPad keyboard alone is worth the price for someone typing notes daily.</p>
+
+  <h2>The honest case against used</h2>
+  <p>The used market has no MRP and no referee. The same laptop sells at three different prices in three shops of the same market. The battery may be at 60% of its original capacity. The SSD may be near the end of its life. The processor is usually 6th–8th generation — fine for study, but you're starting further back on the ageing curve.</p>
+  <p>And the biggest issue: <strong>warranty</strong>. A shop warranty of 3–6 months is not the same as a 1-year onsite brand warranty. If you live in a small town far from a computer market, a new laptop's brand warranty is worth real money.</p>
+
+  <h2>My rule of thumb</h2>
+
+  <div class="spec-strip"><span class="label">Our verdict</span>BUY NEW ..... if you can't personally inspect the machine,
+            live far from a repair market, or need
+            zero-tension ownership for 3+ years
+BUY USED .... if you can test it in person (or trust the
+            seller), want maximum build quality per rupee,
+            and are okay replacing a battery someday</div>
+
+  <h2>The exact checks I run on every used laptop</h2>
+  <p>If you do go used, run these checks at the shop before paying. Any honest seller will let you. If a seller refuses, that refusal is your answer.</p>
+  <ol>
+    <li><strong>SSD health.</strong> Install or ask for CrystalDiskInfo. Health should say "Good" and ideally above 85%. I've written a <a href="ssd-health-check.html">full guide on reading these numbers</a>.</li>
+    <li><strong>Battery report.</strong> On Windows, run <code>powercfg /batteryreport</code> in Command Prompt. Compare "Design Capacity" vs "Full Charge Capacity". Below 60% means budget ₹2,000–3,500 for a new battery soon.</li>
+    <li><strong>Keyboard test.</strong> Open Notepad and press every key. Business laptops from offices sometimes have worn or dead keys.</li>
+    <li><strong>Screen test.</strong> Open a full-white image and a full-black image. Look for dead pixels, lines, and pressure marks.</li>
+    <li><strong>Hinges and body.</strong> Open and close the lid slowly. Grinding, cracking, or a wobbling screen means the hinge mounts are damaged — expensive to fix properly.</li>
+    <li><strong>Ports.</strong> Carry a pen drive and test every USB port. Test the charger port with a slight wiggle — loose DC jacks are a common used-laptop disease.</li>
+    <li><strong>Processor generation.</strong> Right-click My Computer → Properties, or ask the seller to show. Don't accept anything older than 6th gen Intel in 2026, whatever the price.</li>
+  </ol>
+
+  <h2>What about "refurbished" on online platforms?</h2>
+  <p>Certified refurbished from a proper platform sits between new and shop-used: you get a return window and some warranty, but pay a bit more than street price. For students who can't inspect in person, it's a reasonable middle path — just read the condition grading carefully (Superb / Good / Fair mean very different physical conditions).</p>
+
+  <p>Whichever way you go, remember: a laptop for exam prep is a tool, not a status symbol. The best laptop is the one that opens your mock test instantly and doesn't distract you with problems.</p>
 </article>
+
+<div class="help-card reveal"><div>
+  <div><h3>Need a hand with your machine?</h3><p>Repairs, upgrades and honest buying advice. WhatsApp us and we'll reply the same day.</p></div>
+  <a class="btn btn-primary" href="https://wa.me/918929235937" target="_blank" rel="noopener">WhatsApp 89292 35937</a>
+</div></div>
+
+<section class="more">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow">Keep reading</span><h2>More guides</h2></div><a class="btn btn-ghost" href="guides.html">All guides</a></div>
+    <div class="guides"><a class="guide reveal" href="how-much-ram-processor.html"><div class="gimg"><img src="images/cpu-taskmgr.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Specs explained</small><h4>How much RAM and which processor do you actually need for study?</h4></div></a><a class="guide reveal" href="ssd-health-check.html"><div class="gimg"><img src="images/gaming-internals.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Checks</small><h4>How to check SSD health before buying any used laptop</h4></div></a><a class="guide reveal" href="battery-health-check.html"><div class="gimg"><img src="images/battery-report.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Checks</small><h4>How to check laptop battery health before buying used</h4></div></a></div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
-    <p>© 2026 RMG Tech Solutions · Delhi, India</p>
-    <p>
-      <a href="about.html">About</a>
-      <a href="disclosure.html">Affiliate Disclosure</a>
-    </p>
+    <div class="f-grid">
+      <div>
+        <div class="f-brand"><img loading="lazy" decoding="async" src="images/rmg-logo.jpg" alt=""><b>RMG Tech Solutions</b></div>
+        <p style="margin-top:18px;max-width:320px;font-size:14.5px">One stop solution for every machine: CCTV, networking, hardware, AMC, sales and purchase, and accessories across Delhi NCR, Bhiwadi and PAN India.</p>
+      </div>
+      <div><h5>Services</h5><ul><li><a href="cctv-installation-delhi.html">CCTV</a></li><li><a href="networking-services-delhi.html">Networking</a></li><li><a href="computer-hardware-repair-delhi.html">Hardware</a></li><li><a href="computer-amc-delhi.html">AMC</a></li><li><a href="laptop-sales-purchase-delhi.html">Sales and purchase</a></li><li><a href="computer-accessories-delhi.html">Accessories</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="index.html#work">Case studies</a></li><li><a href="about.html">About</a></li><li><a href="guides.html">Guides</a></li></ul></div>
+      <div><h5>Contact</h5><ul><li>+91 89292 35937</li><li>rmgtechsolutions1@gmail.com</li><li>Saraswati Vihar, New Delhi 110034</li><li>MSME Udyam registered · GST registered</li></ul></div>
+    </div>
+    <div class="f-bottom"><span>© 2026 RMG Tech Solutions</span><span>Delhi · PAN India</span></div>
   </div>
 </footer>
 
+<script src="js/main.js?v=4" defer></script>
 </body>
 </html>
