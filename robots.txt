@@ -21,4 +21,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://rmgtechsolutions.github.io/sitemap.xml
+Sitemap: https://rmgtechsolutions.in/sitemap.xml
