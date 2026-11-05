@@ -5,13 +5,14 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How to check laptop battery health before buying used | RMG Tech Solutions</title>
-<meta name="description" content="Use Windows' built-in powercfg battery report to see the true condition of a used laptop's battery before you pay. Step by step, no software needed.">
+<title>Check laptop battery health across your office laptops | RMG Tech Solutions</title>
+<meta name="description" content="Use Windows&#x27; built-in battery report to see the real condition of your team&#x27;s laptop batteries and plan replacements before they fail in a client meeting. No software needed.">
 <link rel="canonical" href="https://rmgtechsolutions.in/battery-health-check.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css?v=4">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When should a laptop battery be replaced?", "acceptedAnswer": {"@type": "Answer", "text": "When its health falls below about 60% of design capacity, when backup no longer covers the user's working pattern, or immediately if the battery is swelling."}}, {"@type": "Question", "name": "Can you replace batteries for our office laptops?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We check the exact model, quote for a compatible or a genuine battery, and fit it on site."}}]}</script>
 </head>
 <body>
 <div class="progress" aria-hidden="true"></div>
@@ -33,68 +34,76 @@
   <div class="wrap">
     <p class="crumbs"><a href="index.html">Home</a> / <a href="guides.html">Guides</a> / Checks</p>
     <span class="eyebrow">Checks</span>
-    <h1>How to check laptop battery health before buying used</h1>
+    <h1>How to check laptop battery health across your office laptops</h1>
     <p class="meta"><span><i></i>RMG Tech Solutions</span><span><i></i>Updated 2026</span></p>
   </div>
 </section>
 
 <article class="prose">
 
-  <p>"Battery bilkul sahi hai, 5 ghante chalti hai." I hear this sentence every day, and about half the time the battery report says otherwise. The good news: Windows has a built-in tool that tells you the truth in about sixty seconds, no download needed, and any seller who won't let you run it has just answered your question.</p>
+  <p>Battery problems show up at the worst time: in a client meeting, at a site visit, in the middle of a presentation. Windows has a built-in report that tells you the truth in about a minute, with nothing to download. Use it on your team's laptops, and on any refurbished laptop before you buy it.</p>
+
+  <h2>Sound familiar?</h2>
+  <ul>
+    <li>Does your sales team carry chargers everywhere because laptops die within two hours?</li>
+    <li>Has a laptop shut down in the middle of a client presentation?</li>
+    <li>Did a refurbished laptop sold as "battery like new" turn out otherwise?</li>
+  </ul>
+  <p>A weak battery is a small cost that causes big embarrassment. Check every laptop once, then plan replacements.</p>
 
   <h2>Run the report</h2>
-  <p>On the laptop you're inspecting:</p>
+  <p>On the laptop you want to check:</p>
   <ol>
-    <li>Press the Windows key, type <code>cmd</code>, right-click Command Prompt, choose "Run as administrator"</li>
-    <li>Type exactly: <code>powercfg /batteryreport</code> and press Enter</li>
-    <li>It prints a file path, usually something like <code>C:\Users\Name\battery-report.html</code></li>
-    <li>Open that file in any browser</li>
+    <li>Press the Windows key, type <code>cmd</code>, right-click Command Prompt and choose "Run as administrator".</li>
+    <li>Type exactly: <code>powercfg /batteryreport</code> and press Enter.</li>
+    <li>It prints a file path, usually like <code>C:\Users\Name\battery-report.html</code>.</li>
+    <li>Open that file in any browser.</li>
   </ol>
-  <p>The whole thing takes less than a minute and touches nothing on the machine. It only reads what Windows has already been recording.</p>
+  <p>It takes less than a minute and changes nothing on the machine. It only reads what Windows has already been recording.</p>
 
   <h2>The two numbers that matter</h2>
   <p>Scroll to the section called "Installed batteries". You want these two rows:</p>
 
   <div class="spec-strip"><span class="label">Battery report — the key rows</span>DESIGN CAPACITY ......... what the battery held when new
 FULL CHARGE CAPACITY .... what it can hold today
-
 HEALTH % = Full Charge ÷ Design × 100</div>
 
-  <figure><img src="images/battery-report.jpg" alt="A Windows battery report showing Design Capacity of 60,000 mWh and Full Charge Capacity of 56,110 mWh, with a cycle count of 91." loading="lazy" decoding="async"><figcaption>A real report from a Lenovo we serviced. 56,110 ÷ 60,000 = 93.5% health, 91 cycles. This is what a well-kept battery looks like. Serial number and machine name blanked out.</figcaption></figure>
+  <figure><img src="images/battery-report.jpg" alt="A Windows battery report showing Design Capacity of 60,000 mWh and Full Charge Capacity of 56,110 mWh, with a cycle count of 91." loading="lazy" decoding="async"><figcaption>A real battery report: 56,110 ÷ 60,000 = 93.5% health, 91 cycles. This is what a well-kept battery looks like. Serial number and machine name hidden.</figcaption></figure>
 
-  <p>Now compare that to a machine that came in last week: Design Capacity 45,000 mWh, Full Charge Capacity 27,900 mWh. That's 62% health. The seller had described it as "battery new jaisi". The laptop was otherwise good, so the customer bought it and budgeted for a replacement — which is the right way to use this number.</p>
-
-  <p>Same report, same two rows, completely different machines. You can tell them apart in ten seconds once you know where to look.</p>
+  <p>For comparison, a battery showing a Design Capacity of 45,000 mWh and a Full Charge Capacity of 27,900 mWh is at 62% health. It is still usable at a desk, but it is time to plan its replacement.</p>
 
   <h2>How to read the percentage</h2>
   <ul>
-    <li><strong>90%+</strong> — barely used. Rare on a used machine, and slightly suspicious if the power-on hours are high (the battery may have been swapped, which isn't bad, just worth asking about).</li>
-    <li><strong>75–90%</strong> — normal for a 3-year-old business laptop. You'll get decent backup. No action needed.</li>
-    <li><strong>60–75%</strong> — noticeably shorter backup. Fine if you mostly work plugged in. Use it to negotiate.</li>
-    <li><strong>Below 60%</strong> — the battery is near the end. Assume replacement cost and subtract it from what you offer.</li>
+    <li><strong>90%+</strong> — barely used. Rare on an older laptop; if the machine has many power-on hours, the battery may have been replaced, which is fine but worth knowing.</li>
+    <li><strong>75–90%</strong> — normal for a three-year-old business laptop. No action needed.</li>
+    <li><strong>60–75%</strong> — noticeably shorter backup. Fine for desk users who work plugged in.</li>
+    <li><strong>Below 60%</strong> — near the end. Schedule a replacement, starting with staff who travel.</li>
   </ul>
 
-  <h2>Also check: cycle count and recent usage</h2>
-  <p>Further down, the report shows "Cycle Count" (how many times the battery has been fully charged and drained). Under 500 is comfortable; over 1,000 means heavy use. Some manufacturers don't report this — a blank field isn't a red flag by itself.</p>
-  <p>The "Battery usage" and "Battery capacity history" sections show the last few days and the last few months. If capacity dropped sharply in recent months, the battery is degrading fast right now, not slowly. That's worse than a low-but-stable number.</p>
+  <h2>Also check: cycle count and recent history</h2>
+  <p>Further down, the report shows the "Cycle Count" (how many full charge cycles the battery has done). Under 500 is comfortable; over 1,000 means heavy use. Some manufacturers do not report it, so a blank field is not a red flag by itself.</p>
+  <p>The "Battery capacity history" section shows the last few months. If capacity has dropped sharply recently, the battery is degrading fast right now, which is worse than a low but stable number.</p>
 
-  <h2>What a replacement actually costs</h2>
-  <p>For most business laptops in the Delhi market, a decent compatible battery runs ₹2,000–3,500, and a genuine OEM one ₹4,000–6,000. Installation is 10–15 minutes on models with an external battery, longer on newer sealed ones.</p>
-  <p>So a battery at 55% health is roughly a ₹2,500–3,000 problem. If the laptop is otherwise excellent and priced ₹4,000 below the market, that's still a good deal. If it's priced the same as a healthy unit, you're overpaying — and now you can say exactly why.</p>
+  <h2>Plan replacements, don't react to them</h2>
+  <p>For a team, run the report on every laptop once (or let us do it during an AMC visit), list the laptops by battery health, and replace those below 60% first, starting with the people who meet clients or work on site. A genuine manufacturer battery costs more than a compatible one but usually lasts longer; we quote both after checking the exact model. Replacement takes minutes on models with an external battery and longer on sealed ones.</p>
+  <p><strong>Safety first:</strong> if a laptop's touchpad is lifting, the case is bulging or the lid no longer closes flat, the battery may be swelling. Stop using that laptop and get the battery replaced immediately. A swollen battery is a fire risk.</p>
 
-  <h2>The one non-negotiable</h2>
-  <p>If a seller refuses to let you open Command Prompt on a laptop they're selling, walk away. It's a sixty-second read-only command. The refusal tells you what the report would have.</p>
+  <h2>Buying refurbished? One non-negotiable</h2>
+  <p>If a seller refuses to let you run this report, walk away. It is a one-minute, read-only command. A low battery on an otherwise excellent laptop is not a deal-breaker — just include the replacement in the price.</p>
+
+  <h2>Common questions</h2>
+  <div class="faq"><details class="faq-item reveal"><summary>When should a laptop battery be replaced?</summary><p>When its health falls below about 60% of design capacity, when backup no longer covers the user's working pattern, or immediately if the battery is swelling.</p></details><details class="faq-item reveal"><summary>Can you replace batteries for our office laptops?</summary><p>Yes. We check the exact model, quote for a compatible or a genuine battery, and fit it on site.</p></details></div>
 </article>
 
 <div class="help-card reveal"><div>
-  <div><h3>Need help with your office systems?</h3><p>Upgrades, IT support and honest buying advice for your business. WhatsApp us and we'll reply the same day.</p></div>
+  <div><h3>Need help with your office systems?</h3><p>Don't let a slow PC slow down your team. Upgrades, IT support and AMC for businesses across Delhi NCR. WhatsApp us and we'll reply the same day.</p></div>
   <a class="btn btn-primary" href="https://wa.me/918929235937" target="_blank" rel="noopener">WhatsApp 89292 35937</a>
 </div></div>
 
 <section class="more">
   <div class="wrap">
     <div class="head"><div><span class="eyebrow">Keep reading</span><h2>More guides</h2></div><a class="btn btn-ghost" href="guides.html">All guides</a></div>
-    <div class="guides"><a class="guide reveal" href="old-laptop-faster.html"><div class="gimg"><img src="images/ram-install.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Upgrades</small><h4>How to make an old laptop fast again: the SSD and RAM upgrade</h4></div></a><a class="guide reveal" href="thinkpad-buying-guide.html"><div class="gimg"><img src="images/bios-jumper.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Buying</small><h4>The used ThinkPad buying guide for students</h4></div></a><a class="guide reveal" href="used-server-hardware.html"><div class="gimg"><img src="images/server-board.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Business</small><h4>Used server hardware: what it is, and why it's not a study machine</h4></div></a></div>
+    <div class="guides"><a class="guide reveal" href="old-laptop-faster.html"><div class="gimg"><img src="images/ram-install.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Upgrades</small><h4>Upgrade or replace? Making your office's old PCs fast again</h4></div></a><a class="guide reveal" href="thinkpad-buying-guide.html"><div class="gimg"><img src="images/bios-jumper.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Buying</small><h4>Buying refurbished ThinkPads for your team: the 2026 guide</h4></div></a><a class="guide reveal" href="used-server-hardware.html"><div class="gimg"><img src="images/server-board.jpg" alt="" loading="lazy" decoding="async"></div><div class="gb"><small>Business</small><h4>Used servers for small offices: when they make sense</h4></div></a></div>
   </div>
 </section>
 
