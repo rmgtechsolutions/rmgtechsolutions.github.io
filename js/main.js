@@ -54,3 +54,16 @@ if(f){
 
 const idle=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('idle',!e.isIntersecting)));
 document.querySelectorAll('.hero,.marquee').forEach(el=>idle.observe(el));
+
+const cnt=document.querySelectorAll('.count[data-count]');
+if(cnt.length){
+  const co=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const el=e.target,end=+el.dataset.count;co.unobserve(el);
+    if(calm){el.textContent=end;return}
+    const t0=performance.now(),dur=1400;
+    const step=t=>{const p=Math.min((t-t0)/dur,1);el.textContent=Math.round(end*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)};
+    el.textContent='0';requestAnimationFrame(step);
+  }),{threshold:.6});
+  cnt.forEach(el=>co.observe(el));
+}

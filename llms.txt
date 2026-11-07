@@ -22,6 +22,9 @@
 - [Contact and quote](https://rmgtechsolutions.in/#contact)
 
 ## Guides
+- [CCTV for schools: what CBSE board-exam centres need](https://rmgtechsolutions.in/cctv-for-schools-cbse.html)
+- [How many CCTV cameras do you need, and which resolution?](https://rmgtechsolutions.in/how-many-cctv-cameras.html)
+- [How many days of CCTV recording will your NVR keep?](https://rmgtechsolutions.in/cctv-storage-days.html)
 - [How to check laptop battery health across your office laptops](https://rmgtechsolutions.in/battery-health-check.html)
 - [Office laptops under ₹30,000: what specs your staff actually need](https://rmgtechsolutions.in/best-laptops-under-30000.html)
 - [How much RAM and which processor do office PCs need?](https://rmgtechsolutions.in/how-much-ram-processor.html)

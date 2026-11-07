@@ -375,3 +375,7 @@ footer a:hover{color:#fff}
 .prose .region h3{margin-top:8px}
 @media (max-width:980px){.why{grid-template-columns:1fr}.regions{grid-template-columns:1fr}}
 @media (max-width:620px){.why-lead{padding:32px 24px}.why-grid{grid-template-columns:1fr}}
+.cred .count{font:inherit;font-variant-numeric:tabular-nums}
+.who.who-5{grid-template-columns:repeat(5,1fr)}
+@media (max-width:980px){.who.who-5{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.who.who-5{grid-template-columns:1fr}}
